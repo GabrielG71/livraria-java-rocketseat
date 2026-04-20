@@ -11,13 +11,13 @@ public class Livro {
     private LocalDate dataCadastro;
     private LocalDate dataAtualizacao;
 
-    public Livro(String titulo, Autor autor, Boolean disponivel, LocalDate dataCadastro, LocalDate dataAtualizacao) {
+    public Livro(String titulo, Autor autor) {
         this.id = UUID.randomUUID().toString();
         this.titulo = titulo;
         this.autor = autor;
-        this.disponivel = disponivel;
-        this.dataCadastro = dataCadastro;
-        this.dataAtualizacao = dataAtualizacao;
+        this.disponivel = true;
+        this.dataCadastro = LocalDate.now();
+        this.dataAtualizacao = LocalDate.now();
     }
 
     public String getId() {
