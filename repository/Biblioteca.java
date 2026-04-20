@@ -12,6 +12,14 @@ public class Biblioteca {
     private List<Autor> autores = new ArrayList<>();
     private List<Emprestimo> emprestimos = new ArrayList<>();
 
+    public void adicionarLivro(Livro livro) {
+        livros.add(livro);
+    }
+
+    public void adicionarAutor(Autor autor) {
+        autores.add(autor);
+    }
+
     public List<Livro> getLivros() {
         return livros;
     }
