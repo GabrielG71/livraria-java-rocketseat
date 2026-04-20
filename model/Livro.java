@@ -43,4 +43,9 @@ public class Livro {
     public LocalDate getDataAtualizacao() {
         return dataAtualizacao;
     }
+
+    public void setDisponivel(Boolean disponivel) {
+        this.disponivel = disponivel;
+        this.dataAtualizacao = LocalDate.now();
+    }
 }
